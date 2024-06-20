@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1f1f1f;
+    color: #333;
+}
+a{
+    text-decoration: none;
+}
+
+.header {
+    background-color: #D80032;
+    padding: 20px;
+    text-align: center;
+}
+.Under-Header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.Under-Header .Detail{
+    background-color: #D80032;
+    padding: 7.77px;
+    width: 20em;
+    height: 0.36em;
+}
+.header h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.pokedex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 35px;
+}
+
+.pokemon-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(56, 56, 56);
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    gap:8px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.pokemon-card a{
+    text-decoration: none;
+    color: rgb(105, 129, 129);
+}
+
+.pokemon-card img {
+    width: 100px;
+    height: 100px;
+}
+
+.pokemon-card span {
+    font-size: 1em;
+    color: #666;
+}
+.pokemon-card:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.pokemon-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px;
+}
+
+.pokemon-detail img {
+    width: 200px;
+    height: 200px;
+    transition: 1s;
+}
+.pokemon-detail img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+.pokemon-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pokemon-info h2 {
+    color: #666;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.pokemon-info p {
+    font-size: 1.2em;
+    color: #666;
+    margin: 5px 0;
+}
+
+.back-button {
+    display: block;
+    padding: 10px 20px;
+    background-color: #D80032;
+    color: #333;
+    font-size: larger;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+footer{
+    display: block;
+    padding: 2em 20px;
+    background-color: #D80032;
+    color: #333;
+    font-size: larger;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.Weaknesses{
+    font-size: larger;
+    color: #666;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.Fire{
+    color: #fd7d24;
+    transition: 1s;
+}
+.Fire:hover{
+    cursor: default;
+    transform: scale(1.1);
+    transition: 1s;
+}
+.Water{
+    color: #4592c4;
+    transition: 1s;
+}
+.Water:hover{
+    cursor: default;
+    transform: scale(1.1);
+    transition: 1s;
+}
+.Grass{
+    color: #9bcc50;
+    transition: 1s;
+}
+.Grass:hover{
+    cursor: default;
+    transform: scale(1.1);
+    transition: 1s;
+}
+.Ground{
+    background: -webkit-linear-gradient(#f7de3f, #ab9842);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 1s;
+}
+.Ground:hover{
+    cursor: default;
+    transform: scale(1.1);
+    transition: 1s;
+}
+.Rock{
+    color: #a38c21;
+    transition: 1s;
+}
+.Rock:hover{
+    cursor: default;
+    transform: scale(1.1);
+    transition: 1s;
+}
+.Poison{
+    color: #b97fc9;
+    transition: 1s;
+}
+.Poison:hover{
+    cursor: default;
+    transform: scale(1.1);
+    transition: 1s;
+}
+.Ice{
+    color: #51c4e7;
+    transition: 1s;
+}
+.Ice:hover{
+    cursor: default;
+    transform: scale(1.1);
+    transition: 1s;
+}
+.Flying{
+    background: -webkit-linear-gradient(#3dc7ef, #bdb9b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 1s;
+}
+.Flying:hover{
+    cursor: default;
+    transform: scale(1.1);
+    transition: 1s;
+}
+.Psychic{
+    color: #f366b9;
+    transition: 1s;
+}
+.Psychic:hover{
+    cursor: default;
+    transform: scale(1.1);
+    transition: 1s;
+}
+.Electric{
+    color: #eed535;
+    transition: 1s;
+}
+.Electric:hover{
+    cursor: default;
+    transform: scale(1.1);
+    transition: 1s;
+}
+.Bug{
+    color: #729f3f;
+    transition: 1s;
+}
+.Bug:hover{
+    cursor: default;
+    transform: scale(1.1);
+    transition: 1s;
+}
+.Normal{
+    color: #a4acaf;
+}
+.Normal:hover{
+    cursor: default;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+@media (max-width: 600px) {
+    .pokemon-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .Under-Header .Detail{
+        width: 10em;
+    }
+
+}
